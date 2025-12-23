@@ -21,7 +21,7 @@ Technologies Used:
 - Material UI (for input field and icons)
 
 - SCSS
-- 
+  
 - Open API: https://spaceflightnewsapi.net/
 
 ***
