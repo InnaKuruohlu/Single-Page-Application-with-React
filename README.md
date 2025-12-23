@@ -30,11 +30,6 @@ The design was implemented only for large screens, as the assignment did not req
 
 ***
 
-Installation:
-
-- Install dependencies: npm install
-- Start development server: npm run dev
-
 Features
 
 
@@ -59,4 +54,9 @@ Article Page:
 
 - Clicking "Back to homepage" navigates to the home page
 
+***
 
+Installation:
+
+- Install dependencies: npm install
+- Start development server: npm run dev
