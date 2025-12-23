@@ -1,0 +1,148 @@
+@use "../styles/main-style-var" as *;
+
+body{
+ font-family: "Montserrat", sans-serif;
+ margin: 0;
+}
+
+ p, h3{
+  margin: 0;
+  padding: 0;
+}
+
+.homeSection{
+  margin: 50px 75px;
+}
+
+.container-form{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 10px;
+
+  .label{
+  color: $text-color !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  }
+
+  .input{
+  height: 50px;
+  box-shadow: $shadow;
+
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $border-color;
+    }
+  }
+}
+
+.results{
+color: $text-color;
+font-size: 16px;
+font-weight: 600;
+letter-spacing: 0.5px;
+margin-top: 40px;
+border-bottom: solid 1px $border-color;
+padding-bottom: 3px;
+}
+
+.containerArticles{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  margin-top: 40px;
+
+  .container-article{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $shadow;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+
+    .image{
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      height: 210px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      &.magazine{
+      object-position: 50% 30%;
+      }
+
+      &.robot{
+      object-position: 50% 30%;
+      }
+    }
+
+    .container-text{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: left;
+      border-bottom: solid 1px $border-color;
+      border-left: solid 1px $border-color;
+      border-right: solid 1px $border-color;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 25px;
+
+
+      .data{
+        font-size: 14px;
+        color: #b8b8b8;
+
+          .calendarIcon{
+          font-size: 16px !important;
+          margin-right: 5px !important;
+          margin-bottom: -2px !important;
+        }
+      }
+
+      .nameOfDesc{
+        color: $text-color;
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 70%;
+        
+      }
+
+      .DescText{
+        color: $text-color;
+        font-size: 16px;
+        margin-bottom: 20px;
+        
+      }
+
+      .ReadMoreButton{
+        text-align: left;
+        background: transparent;
+        border: none;
+        margin-left: -5px;
+        color: #363636;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+
+          .arrowIcon{
+          font-size: 16px !important;
+          margin-bottom: -3px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
