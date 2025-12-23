@@ -26,6 +26,14 @@ Technologies Used:
 
 ***
 
+The design was implemented only for large screens, as the assignment did not require adaptive or responsive layout.
+
+***
+
+Installation:
+
+- Install dependencies: npm install
+- Start development server: npm run dev
 
 Features
 
